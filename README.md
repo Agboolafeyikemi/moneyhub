@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Moneyhub Tech Test
 
-## Getting Started
+## 📝 Requirements
 
-First, run the development server:
+We would like you to:
 
-```bash
-npm run dev
-# or
-yarn dev
+---
+
+**Required**: Add a "Valuation changes" section to the page. `design-mock-up.png` has been provided as a design reference for the page and `detail-design-mock-up.png` shows the specific feature to be added, including how it is styled responsively. Make use of existing fonts and styles to match the look and feel of the existing app rather than trying to match the mock up exactly.
+
+```
+ sincePurchase = `recentValuation - originalPurchasePrice`
+ sincePurchasePercentage = `sincePurchase / originalPurchasePrice * 100`
+ annualAppreciation =`sincePurchasePercentage / number of years since purchase`
+ colours used for the positive change in the image are #c2f7e1 and #006b57
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Consider what other data this component could take and how that might affect your theming and solution
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Consider opportunities to reduce repetition in the code and increase legibility
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- This could be creating new components, simplifying existing ones, extracting helper function to simplify code or styling
+- Show us what you can do and implement a few of these if you have time
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+We also ask that you update the readme with answers to the following questions
 
-## Learn More
+1. Given more time, what other changes you would have liked to make?
+2. What UX or design improvements or alterations might you suggest? These can be to existing components or completely new ideas.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Optional**: If you have time, show us some more by fetching the data from the api
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Currently the property data is hardcoded in the component, but it is also avaible via a Next.js api route
+- Details of a property are located in the API at `/api/account`, use this endpoint to populate the app with data
+- Use whichever method or library you are comfortable with to fetch the data
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Try to:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Ensure markup is semantic and accessible
+- Make use of a centralised theme
+- Make effective use of Git
+
+We prefer:
+
+- Functional React components
+- `styled-components` for styling
+- `prop-types` for typechecking
+
+---
+
+**IMPORTANT**
+
+Most of your work should take place inside the `components/` and `modules/` directory. There are some example components and styles available and the theme is defined in `theme/`. This task has been mocked up in Next.js to provide a full working environment and as such shouldn't be taken as a _complete_ application. We are interested in assessing your React frontend skills and are not testing your knowledge of Next.js, you should not need to make any changes in the `pages/` directory.
+
+## ❓Questions
+
+1. Given more time, what other changes you would have liked to make?<br />
+
+   - Coding guidelines to improve readability and maintainability of the codebase.
+   - Adding tests and Typescript.
+   - I would have loved to have added some kind of animation for this feature, maybe some kind of loading state whilst the information is being calculated, for example.
+   - It would also be nice if the JSX returned was a bit more readable, i.e not calculating everything in this area and potentially having presentational components that take information through props.
+
+2. What UX or design improvements or alterations might you suggest? These can be to existing components or completely new ideas.<br />
+   - It would be nice to have a negative and neutral label. So the label component would likely have 3 different states "positive", "neutral" and "negative" depending on the number/calculation.
+   - Maybe some graphs / visuals of trends that the user can filter with ease.
+   -
+
+---
+
+## 🎨 Mock designs
+
+![image]()
+
+---
+
+## 🧰 Tools
+
+- [NextJS](https://nextjs.org/)
+
+---
+
+## ✍🏻 Author
+
+- GitHub - [@jadetrue](https://github.com//)
