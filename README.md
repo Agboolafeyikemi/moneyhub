@@ -73,7 +73,7 @@ Most of your work should take place inside the `components/` and `modules/` dire
 
 ## 🎨 Mock designs
 
-![image]()
+![image](https://github.com/Agboolafeyikemi/moneyhub/blob/main/design-mock-up.png)
 
 ---
 
@@ -85,4 +85,4 @@ Most of your work should take place inside the `components/` and `modules/` dire
 
 ## ✍🏻 Author
 
-- GitHub - [@jadetrue](https://github.com//)
+- GitHub - [@Agboolafeyikemi](https://github.com/Agboolafeyikemi/moneyhub)
